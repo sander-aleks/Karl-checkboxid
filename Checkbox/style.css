@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.S-box-one{
+    display: flex;
+    border: solid black 1px;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.slider-one {
+    display: flex;
+    height: 10px;
+    width: 40px;
+    background-color: black;
+    justify-content: flex-start;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.SliderO-circle {
+    background-color: gray;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.S-box-two{
+    display: flex;
+    border: solid black 1px;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.slider-two {
+    display: flex;
+    height: 20px;
+    width: 45px;
+    background-color: black;
+    justify-content: flex-start;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.SliderT-circle {
+    display: flex;
+    background-color: gray;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3px;
+}
+.ST-inner-circle {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+.st-line {
+    width: 25px;
+    height: 2px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}

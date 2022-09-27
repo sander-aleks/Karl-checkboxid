@@ -2,71 +2,73 @@
     margin: 0%;
     padding: 0%;
 }
-.S-box-one{
-    display: flex;
-    border: solid black 1px;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
 }
-.slider-one {
-    display: flex;
-    height: 10px;
-    width: 40px;
+.darkmode {
     background-color: black;
-    justify-content: flex-start;
-    border-radius: 5px;
-    align-items: center;
-    justify-content: flex-start;
-}
-.SliderO-circle {
-    background-color: gray;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    color: white;
 }
 
-.S-box-two{
-    display: flex;
-    border: solid black 1px;
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.slider-two {
-    display: flex;
-    height: 20px;
-    width: 45px;
-    background-color: black;
-    justify-content: flex-start;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: flex-start;
-}
-.SliderT-circle {
-    display: flex;
-    background-color: gray;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3px;
-}
-.ST-inner-circle {
-    display: flex;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-}
-.st-line {
-    width: 25px;
-    height: 2px;
-    background-color: aliceblue;
-    border-radius: 5px;
-}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    }
+
+    .switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    .slider{
+        position: relative;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before{
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: black;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196f3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider{
+        border-radius: 34px;
+    }
+
+    .slider:before {
+        border-radius: 50%;
+    }
